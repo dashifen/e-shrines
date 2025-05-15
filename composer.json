@@ -1,0 +1,26 @@
+{
+  "name": "dashifen/e-shrines",
+  "description": "A WordPress plugin for the production of e-shrines.",
+  "minimum-stability": "stable",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Dashifen Kees",
+      "email": "dashifen@dashifen.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dashifen\\WordPress\\Plugins\\eShrines\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "dashifen/wp-handler": "^11"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
