@@ -30,9 +30,9 @@ class RegistrationAgent extends AbstractPluginAgent
   protected function registerPostType(): void
   {
     register_post_type('shrine', [
+      'menu_icon'           => 'dashicons-buddicons-friends',
       'labels'              => $this->getPostTypeLabels('Shrine', 'Shrines', 'dash-e-shrines'),
       'supports'            => ['title', 'editor'],
-      'menu_icon'           => $this->getIcon(),
       'capability_type'     => 'post',
       'menu_position'       => 21,
       'hierarchical'        => false,
